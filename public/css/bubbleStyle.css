@@ -1,0 +1,513 @@
+.bubbleHolder {
+	display: block;
+}
+
+.bubbleWrap {
+	position: absolute;
+	width: 205px;
+	height: 205px;
+	-webkit-border-radius: 205px;
+	-o-border-radius: 205px;
+	-moz-border-radius: 205px;
+	border-radius: 205px;
+	overflow: hidden !important;
+	cursor: pointer;
+	
+	transform:translate(204px, 0px) scale(1);
+	-moz-transform:translate(204px, 0px) scale(1);
+	-o-transform:translate(204px, 0px) scale(1);
+	-webkit-transform:translate(204px, 0px) scale(1);
+	-ms-transform:translate(204px, 0px) scale(1);
+}
+
+.bubbleWrap.center {
+	transform:translate(322px, 136px) scale(2.17);
+	-moz-transform:translate(322px, 136px) scale(2.17);
+	-o-transform:translate(322px, 136px) scale(2.17);
+	-webkit-transform:translate(322px, 136px) scale(2.17);
+	-ms-transform:translate(322px, 136px) scale(2.17);
+	backface-visibility: hidden !important;
+	background: rgb(245, 108, 44);
+}
+
+.bubbleSmall1, .bubbleSmall2, .bubbleSmall3, .bubbleSmall4, .bubbleSmall5 {
+	transition:all 500ms ease;
+	-moz-transition:all 500ms ease; 
+	-webkit-transition:all 500ms ease; 
+	-o-transition:all 500ms ease; 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	backface-visibility: hidden !important;
+}
+
+.bubbleSmall1 {
+	background: rgba(110, 103, 95, 2);
+	transform: translate(5px, 200px) scale(0.81);
+	-moz-transform: translate(5px, 200px) scale(0.81);
+	-o-transform: translate(5px, 200px) scale(0.81);
+	-webkit-transform:translate(5px, 200px) scale(0.81);
+	-ms-transform: translate(5px, 200px) scale(0.81);
+}
+
+.bubbleSmall2 {
+	background: rgba(124, 116, 106, 2);
+	transform:translate(96px, 369px) scale(0.81);
+	-moz-transform:translate(96px, 369px) scale(0.81);
+	-o-transform: translate(96px, 369px) scale(0.81);
+	-webkit-transform: translate(96px, 369px) scale(0.81);
+	-ms-transform:translate(96px, 369px) scale(0.81);
+}
+
+.bubbleSmall3 {
+	background: rgba(137, 128, 115, 2);
+	transform:translate(275px, 457px) scale(0.81);
+	-moz-transform: translate(275px, 457px) scale(0.81);
+	-o-transform: translate(275px, 457px) scale(0.81);
+	-webkit-transform: translate(275px, 457px) scale(0.81);
+	-ms-transform: translate(275px, 457px) scale(0.81);
+}
+
+.bubbleSmall4 {
+	background: rgba(155, 144, 131, 3);
+	transform:translate(463px, 431px) scale(0.81);
+	-moz-transform:translate(463px, 431px) scale(0.81);
+	-o-transform:translate(463px, 431px) scale(0.81);
+	-webkit-transform:translate(463px, 431px) scale(0.81);
+	-ms-transform:translate(463px, 431px) scale(0.81);
+}
+
+.bubbleSmall5 {
+	background: rgba(155, 144, 131, 3);
+	
+	transform: translate(49px, 129px) scale(0.67);
+	-moz-transform: translate(49px, 129px) scale(0.67);
+	-o-transform: translate(49px, 129px) scale(0.67);
+	-webkit-transform: translate(49px, 129px) scale(0.67);
+	-ms-transform: translate(49px, 129px) scale(0.67);
+}
+
+
+.bubbleWrap h3, .bubbleContent h4 {
+	font-family: 'ars_maquette_pro_medium';
+	font-size: 24px;
+	text-align: center;
+	line-height: 26px;
+	opacity: 1.0;
+}
+
+.bubbleWrap h3 {
+    color: #EFECE6;
+    font-size: 16px;
+    position: relative;
+    top: 89px;
+}
+
+.bubbleWrap .bubbleContent {
+	position: absolute;
+	width: 292px;
+	height: 298px;
+	text-align: center;	
+	left: 50%;
+	margin-left: -146px;
+	padding-top: 5px;
+	top: 67px;
+	display: none;
+	overflow: hidden;
+	-webkit-transition:all 400ms ease;
+ 	-moz-transition: all 400ms ease;
+  	-o-transition: all 400ms  ease;
+  	color: #fff;
+  	transition: all 400ms ease;
+	transform:translate(0px, -121px) scale(0.47);
+	-moz-transform:translate(0px, -121px) scale(0.47);
+	-o-transform:translate(0px, -121px) scale(0.47);
+	-webkit-transform:translate(0px, -121px) scale(0.47);
+	-ms-transform:translate(0px, -121px) scale(0.47);
+	z-index: 10;
+}
+
+.center  .bubbleContent {
+	display: block !important;
+}
+
+.bubbleContent h4 {
+	color: #efece6;
+	margin: 0px;
+	/*padding-bottom: 14px;*/
+}
+	
+.bubbleShow .bubbleContent {
+	display: block !important;
+}
+
+.center h3 {
+	opacity: 0.0;
+}
+
+.bubbleContent strong {
+    padding: 0 0 14px;
+}
+
+@media all and (max-width: 768px) and (min-width: 601px) {
+	.bubbleWrap.center {
+	 	transform: translate(344px, 165px) scale(2.38);
+	 	-moz-transform:translate(344px, 165px) scale(2.38);
+		-o-transform:translate(344px, 165px) scale(2.38);
+		-webkit-transform:translate(344px, 165px) scale(2.38);
+		-ms-transform:translate(344px, 165px) scale(2.38);
+	 }
+	 
+	 .bubbleWrap .bubbleContent {
+	 	background-size: 65px auto;
+	    margin-left: -117px;
+	    padding-top: 5px;
+	    top: 74px;
+	    width: 235px;
+	 }
+	 
+	 .bubbleContent h4 {
+	 	 font-size: 19px;
+    	 padding-top: 7px;
+    	 padding-bottom: 2px;
+	 }
+	 
+	 .bubbleContent strong {
+	 	padding-bottom: 0px;
+	 }
+	 
+	 .bubbleContent strong, .bubbleContent p {
+	 	font-size: 12px;
+	 	line-height: 16px;
+	 }
+	 
+	 .bubbleSmall1 {
+	 	transform: translate(-5px, 238px) scale(0.89);
+	 	-moz-transform: translate(-5px, 238px) scale(0.89);
+		-o-transform: translate(-5px, 238px) scale(0.89);
+		-webkit-transform: translate(-5px, 238px) scale(0.89);
+		-ms-transform: translate(-5px, 238px) scale(0.89);
+	 }
+	 .bubbleSmall2 {
+	 	transform: translate(96px, 424px) scale(0.89);
+	 	-moz-transform: translate(96px, 424px) scale(0.89);
+		-o-transform: translate(96px, 424px) scale(0.89);
+		-webkit-transform: translate(96px, 424px) scale(0.89);
+		-ms-transform: translate(96px, 424px) scale(0.89);
+	 }
+	 
+	 .bubbleSmall3 {
+	 	transform: translate(292px, 519px) scale(0.89);
+	 	-moz-transform: translate(292px, 519px) scale(0.89);
+		-o-transform: translate(292px, 519px) scale(0.89);
+		-webkit-transform: translate(292px, 519px) scale(0.89);
+		-ms-transform: translate(292px, 519px) scale(0.89);
+	 }
+	 
+	 .bubbleSmall4 {
+	 	transform: translate(500px, 491px) scale(0.89);
+	 	-moz-transform: translate(500px, 491px) scale(0.89);
+		-o-transform: translate(500px, 491px) scale(0.89);
+		-webkit-transform: translate(500px, 491px) scale(0.89);
+		-ms-transform: translate(500px, 491px) scale(0.89);
+	 }
+	 
+	 .processHolder {
+	 	padding-bottom: 236px !important;
+	 }
+	 
+	 .bubbleWrap h3 {
+	 	top: 104px;
+	 }
+}
+
+@media all and (max-width: 600px) and (min-width: 479px), (max-width: 724px) and (min-width: 601px) {
+	
+	.bubbleWrap.center {
+		transform: translate(251px, 115px) scale(1.92);
+		-moz-transform: translate(251px, 115px) scale(1.92);
+		-o-transform: translate(251px, 115px) scale(1.92);
+		-webkit-transform: translate(251px, 115px) scale(1.92);
+		-ms-transform: translate(251px, 115px) scale(1.92);
+	}
+	
+	.bubbleWrap h3 {
+	 	top: 108px;
+	 	font-size: 15px;
+	 }
+	 
+	 #pageContent .processHolder {
+	    padding: 61px 0 84px !important;
+	}
+	
+	.bubbleContent strong {
+	    padding: 0 0 3px;
+	 }
+	
+	.bubbleContent h4 {
+	 	 font-size: 18px;
+	    padding-bottom: 14px;
+	    padding-top: 11px;
+	 }
+	 
+	.bubbleContent h3, .bubbleContent p {
+	   font-size: 13px;
+       line-height: 16px;
+	}
+
+	 .bubbleWrap .bubbleContent {
+	 	background-size: 65px auto;
+	    height: 320px;
+	    margin-left: -139px;
+	    padding-top: 15px;
+	    top: 48px;
+	    width: 279px;
+	 }
+	 
+	.bubbleSmall1 {
+		transform: translate(-30px, 173px) scale(0.72);
+		-moz-transform: translate(-30px, 173px) scale(0.72);
+		-o-transform: translate(-30px, 173px) scale(0.72);
+		-webkit-transform: translate(-30px, 173px) scale(0.72);
+		-ms-transform: translate(-30px, 173px) scale(0.72);
+	}
+	
+	.bubbleSmall2 {
+		transform: translate(51px, 323px) scale(0.72);
+		-moz-transform: translate(51px, 323px) scale(0.72);
+		-o-transform: translate(51px, 323px) scale(0.72);
+		-webkit-transform: translate(51px, 323px) scale(0.72);
+		-ms-transform: translate(51px, 323px) scale(0.72);
+	}
+	
+	.bubbleSmall3 {
+		transform: translate(209px, 399px) scale(0.72);
+		-moz-transform: translate(209px, 399px) scale(0.72);
+		-o-transform: translate(209px, 399px) scale(0.72);
+		-webkit-transform: translate(209px, 399px) scale(0.72);
+		-ms-transform: translate(209px, 399px) scale(0.72);
+	}
+	
+	.bubbleSmall4 {
+		transform: translate(376px, 376px) scale(0.72);
+		-moz-transform: translate(376px, 376px) scale(0.72);
+		-o-transform: translate(376px, 376px) scale(0.72);
+		-webkit-transform: translate(376px, 376px) scale(0.72);
+		-ms-transform: translate(376px, 376px) scale(0.72);
+	}
+}
+
+
+@media all and (max-width: 480px) and (min-width: 321px), (max-width: 583px) and (min-width: 481px) {
+	
+	.bubbleWrap.center {
+		transform: translate(187px, 68px) scale(1.58);
+		-moz-transform: translate(187px, 68px) scale(1.58);
+		-o-transform: translate(187px, 68px) scale(1.58);
+		-webkit-transform: translate(187px, 68px) scale(1.58);
+		-ms-transform: translate(187px, 68px) scale(1.58);
+	}
+	
+	.bubbleWrap h3 {
+	 	top: 106px;
+	 	font-size: 15px;
+	 }
+	 
+	 
+	 #pageContent .processHolder {
+	    padding: 61px 0 0 !important;
+	}
+	
+	 .bubbleContent strong {
+	    padding: 10px 0 3px;
+	 }
+	
+	.bubbleContent h4 {
+	 	font-size: 16px;
+    	padding-top: 16px;
+	 }
+	 
+	.processHolder h3, .processHolder p {
+	    font-size: 12px;
+	    line-height: 15px;
+	}
+
+	 .bubbleWrap .bubbleContent {
+	 	background-size: 65px auto;
+	    height: 308px;
+	    margin-left: -140px;
+	    padding-top: 22px;
+	    top: 46px;
+	    width: 279px;
+	 }
+	
+	.bubbleSmall1 {
+		transform: translate(-45px, 115px) scale(0.59);
+		-moz-transform: translate(-45px, 115px) scale(0.59);
+		-o-transform: translate(-45px, 115px) scale(0.59);
+		-webkit-transform: translate(-45px, 115px) scale(0.59);
+		-ms-transform: translate(-45px, 115px) scale(0.59);
+	}
+	
+	.bubbleSmall2 {
+		transform: translate(22px, 238px) scale(0.59);
+		-moz-transform: translate(22px, 238px) scale(0.59);
+		-o-transform: translate(22px, 238px) scale(0.59);
+		-webkit-transform:  translate(22px, 238px) scale(0.59);
+		-ms-transform:  translate(22px, 238px) scale(0.59);
+	}
+	
+	.bubbleSmall3 {
+		transform: translate(152px, 301px) scale(0.59);
+		-moz-transform: translate(152px, 301px) scale(0.59);
+		-o-transform: translate(152px, 301px) scale(0.59);
+		-webkit-transform: translate(152px, 301px) scale(0.59);
+		-ms-transform: translate(152px, 301px) scale(0.59);
+	}
+	
+	.bubbleSmall4 {
+		transform: translate(289px, 282px) scale(0.59);
+		-moz-transform: translate(289px, 282px) scale(0.59);
+		-o-transform: translate(289px, 282px) scale(0.59);
+		-webkit-transform: translate(289px, 282px) scale(0.59);
+		-ms-transform: translate(289px, 282px) scale(0.59);
+	}
+	
+	.bubbleSmall1 h3, .bubbleSmall2 h3, .bubbleSmall3 h3, .bubbleSmall4 h3 {
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 320px), (max-width: 478px) {
+	.bubbleHolder {
+		width: 278px !important;
+	}
+	
+	.bubbleWrap {
+		overflow: visible !important;
+		transform: none !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-o-transform: none !important;
+	}
+	
+	.bubbleHolder .bubbleSmall1, .bubbleSmall2, .bubbleSmall3, .bubbleSmall4, .center {
+		
+	    overflow: visible !important;
+	}
+	
+	.bubbleHolder .bubbleWrap h3 {
+		color: #808285 !important;
+	}
+	
+	.bubbleHolder .bubbleWrap h3, .center h3 { 
+	    font-size: 11px !important;
+	    margin: 0 !important;
+	    opacity: 1.0 !important;
+	}
+	
+	.bubbleHolder .bubbleWrap.center h3 { 
+		color: #f56522 !important;
+	}
+	
+	.bubbleWrap.center, .bubbleWrap {
+		height: 295px !important;
+		left: -10px !important;
+		position: absolute !important;
+		top: 130px !important;
+		transform: none !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-o-transform: none !important;
+		width: 296px !important;
+		background-color: #F56C2C !important;
+		border-radius: 296px 296px 296px 296px; 
+		-moz-border-radius: 296px 296px 296px 296px; 
+		-webkit-border-radius: 296px 296px 296px 296px; 
+		-o-border-radius: 296px 296px 296px 296px; 
+	}
+	
+	.bubbleWrap, .bubbleContent {
+		z-index: 0;
+		transition: opacity 1500ms;
+		-moz-transition:opacity 1500ms; 
+		-webkit-transition:opacity 1500ms; 
+		-o-transition:opacity 1500ms; 
+	}
+	
+	.bubbleWrap.center {
+		z-index: 10;
+	}
+		
+	.bubbleWrap .bubbleContent {
+		opacity: 0.0;
+		transform: none !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-o-transform: none !important;
+		top: 102px !important;
+	}
+	
+	.bubbleWrap.center .bubbleContent {
+		opacity: 1.0;
+	}
+	
+	.bubbleWrap.center {
+		display: block;
+		width: 500px;
+	}
+	
+	.bubbleWrap .bubbleContent {
+		background-size: 50px auto !important;
+		top: 22px !important;
+		padding-top: 10px !important;
+		width: 224px !important;
+		margin-left: -112px !important;
+		height: 210px !important;
+	}
+	
+	.bubbleContent h4 {
+		font-size: 13px !important;
+		padding-top: 0px !important;
+		padding-bottom: 3px !important;
+		margin-bottom: 0px !important;
+	}
+	
+	.bubbleContent p , .bubbleContent strong {
+		font-size: 9px !important;
+		line-height: 12px !important;
+		padding-top: 0px !important;
+		width: auto !important;
+	}
+	
+	.bubbleContent strong {
+		padding-bottom: 1px !important;	
+	}
+	
+	#pageContent .processHolder {
+		padding-bottom: 0px !important;
+	}
+	
+	.bubbleHolder {
+	    height: 470px !important;
+	    margin-top: 32px !important;
+	}
+	
+	.bubbleWrap:nth-child(1) h3 {
+		top: -140px;
+	}
+	
+	.bubbleWrap:nth-child(2) h3 {
+		top: -116px;
+	}
+	
+	.bubbleWrap:nth-child(3) h3 {
+		top: -92px;
+	}
+	
+	.bubbleWrap:nth-child(4) h3 {
+		top: -69px;
+	}
+	
+	.bubbleWrap:nth-child(5) h3 {
+		top: -45px;
+	}	
+}

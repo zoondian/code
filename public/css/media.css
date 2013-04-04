@@ -1,0 +1,157 @@
+
+@media only screen and (min-width : 769px) and (max-width : 930px) {
+	
+	.commonWidth.project3M .sliderDetails {
+		height: 266px !important;
+	}
+		
+	.pageHeader .pageNav {
+		border-top: 2px solid #eeeae7;
+		width: 100%;
+		margin-top: 19px;
+		padding: 11px 0 12px;
+		margin-bottom: 0;			
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		transition: all 0.3s linear;
+	}
+
+	.headerWrap.commonWidth .pageNav ul li:first-child a {
+    	margin-left: 0px;
+		padding-left: 0px;
+	}
+	
+	#pageContent {
+	    margin: 128px 0 0 !important;
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		transition: all 0.3s linear;	    
+	    
+	}
+	
+}
+
+@media only screen and (min-width : 769px) and (max-width : 805px) {
+	
+	.pageFooter.commonWidth .footerInfo {
+		height: 63px;
+		padding-top: 0px;
+		border-bottom: 2px solid #EEEAE7;
+	}
+	
+	.pageFooter.commonWidth .footerInfo .footerNav {
+		padding-bottom: 21px !important;
+		padding-top: 13px;
+		float: left;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.pageFooter.commonWidth .footerInfo .footerLogo, .pageFooter.commonWidth .footerInfo .caption {
+		display: none;
+	}
+	
+	.pageFooter.commonWidth .footerNav ul li:first-child a {
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+	
+}
+
+
+@media only screen and (min-width : 321px) and (max-width : 930px) {
+	
+	.headerWrap.commonWidth .pageNav ul li:first-child a {
+    	margin-left: 0px;
+		padding-left: 0px;
+	}
+	
+	.pageHeader .pageLogo {
+		background: url("../images/pageLogoOrangeNew.png") no-repeat 0 center;
+		width: 189px;
+		height: 39px;
+		background-size: contain;
+		margin-right: 18px;
+		
+		-webkit-transition: all 0.3s linear;
+		-moz-transition: all 0.3s linear;
+		transition: all 0.3s linear;
+	}
+	
+	.pageHeader .pageLogo img {
+		display: none
+	}
+	
+	.pageHeader .headerWrap.commonWidth .caption {
+	    font-size: 20px;
+	    margin: 6px 0 0;
+	    padding: 9px 0 0 17px;
+	    background-size: auto 100%;
+	}
+
+}
+
+@media only screen and (min-width : 1024px) {
+		
+	.headerWrap {
+	    width: 1024px;
+	    border: 0px solid red;	    
+	}
+	
+	#pageContent, .bannerContainer, .amazingContainer {
+	    min-width: 1024px;
+	}
+	
+	.commonWidth {
+		width: 1000px;
+	}
+	
+	.pageFooter.commonWidth {
+		width: auto;
+		max-width: 1000px;
+	}
+}
+
+@media only screen and (max-width : 1023px) {		  
+	.bannerHolder {
+    	background-size: auto 100% !important;
+   	}
+}
+
+@media only screen and (max-width : 1023px) and (min-width : 481px) {		
+	.projectBannerHolder {
+		background-size: auto 100% !important;
+	}
+}
+
+@media only screen and (max-width : 481px) {		
+	.projectBannerHolder.bannerCirrus {
+	    background-position: -620px 0;
+	}
+}
+	
+	
+
+@media all and (max-width: 1016px) { 
+	
+	.amazingHolder.commonWidth, .services {
+		width: 722px;
+	}
+	
+	.services {
+		margin: 0 auto;
+	}
+	
+	.engagingContent, .engagingContent p {
+		width: auto;
+		float: none;
+	}
+	
+	.engaging aside {
+		float: none;
+		margin: 0 auto;
+		width: 298px;
+	}
+	
+}
+

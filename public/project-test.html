@@ -1,0 +1,101 @@
+	<!DOCTYPE html>
+<html>
+    <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Untitled Document</title>
+        
+        <script src="js/jquery-1.7.2.min.js"></script>	
+		
+		<!-- <script src="http://uma001.businesscatalyst.com/videoPlayer/js/mediaelement-and-player.js"></script> -->
+		
+		<script src="js/custom_scripts.js"></script>
+		<script src="js/mediaelement-and-playerYoutube.js"></script>
+	<script src="js/jquery.fullscreen-min.js"></script>	
+
+	<link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+	<style>
+		
+		.fullScreenWrap {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.fullScreenIEWrap {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.fullScreenIEWrap iframe {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.fullScreenWrap  .vimeoControls {
+	bottom: 0px;
+	left: 0px;
+}
+
+	</style>
+    </head>
+
+    <body>
+		<h1>MediaElementPlayer.js</h1>
+		
+		<h2>YouTube Wrapper</h2>
+		
+		
+		
+		<video width="640" height="360" id="player1" class="youtubeVideo">
+		   <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+		</video>
+		
+		<video width="640" height="360" id="player2" class="youtubeVideo">
+		   <source type="video/youtube" src="http://www.youtube.com/watch?v=9bZkp7q19f0" />
+		</video>
+		
+		<video width="640" height="360" class="customVideo" id="player3" poster="http://uma001.businesscatalyst.com/videoPlayer/echo-hereweare.jpg" controls="controls" preload="none">
+			<source type="video/mp4" src="http://uma001.businesscatalyst.com/videoPlayer/echo-hereweare.mp4" />
+			<source type="video/webm" src="http://uma001.businesscatalyst.com/videoPlayer/echo-hereweare.webm" />
+			<source type="video/ogg" src="http://uma001.businesscatalyst.com/videoPlayer/echo-hereweare.ogv" />
+		</video>
+		
+		
+		<span id="player1-mode"></span>
+		
+		<script>
+		$('.customVideo').mediaelementplayer({
+			//features: ['playpause','progress','volume'],
+			YT: "disable",
+			success: function(media, node, player) {
+				$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+			}
+		});
+		
+		
+		$('.youtubeVideo').mediaelementplayer({
+			features: ['playpause','progress','volume'],
+			YT: "enable",
+			success: function(media, node, player) {
+				$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+				
+				$(".youtubeVideo .mejs-controls").each(function() {
+					$(this).append("<div class='fullScreenControl' style='background: red; width: 20px; height: 20px;'></div>")
+				});
+			}
+		});
+		
+		
+		
+		$(document).ready(function() {
+			
+		});
+		</script>
+	</body>
+</html>
